@@ -1,0 +1,114 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b9cdea 20%, #81abee 80%) !important;
+  padding: 1rem;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.input-group label {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group input {
+  padding: 1.2rem 1rem 0.8rem;
+  border: 2px solid #e0e6ed;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.input-group input::placeholder {
+  color: #94a3b8;
+  opacity: 0.7;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+  background-color: white;
+}
+
+.input-group:focus-within label {
+  color: #234872;
+  transform: translateY(-2px);
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  background-color: #fff2f2;
+  color: #dc3545;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 1px solid rgba(220, 53, 69, 0.1);
+  box-shadow: 0 2px 4px rgba(220, 53, 69, 0.05);
+}
